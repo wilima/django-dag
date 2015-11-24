@@ -3,3 +3,4 @@ README
 setup.py
 django_dag/__init__.py
 django_dag/models.py
+django_dag/templatetags/dag_tags.py
