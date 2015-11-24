@@ -5,11 +5,6 @@ from django import template
 
 register = template.Library()
 
-# from django import template
-#
-# register = template.Library()
-
-
 class RecurseDictNode(template.Node):
     def __init__(self, var, nodeList):
         self.var = var
