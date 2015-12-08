@@ -95,6 +95,12 @@ class NodeBase(object):
             res.update(f.descendants_set())
         return res
 
+    def descendants_set_size(self):
+        """
+        Returns a size of set of descendants
+        """
+        return len(descendants_set(self));
+
     def ancestors_set(self):
         """
         Returns a set of ancestors
@@ -254,4 +260,3 @@ def node_factory(edge_model, children_null = True, base_model = models.Model):
                 related_name = '_parents') # NodeBase.parents() is a function
 
     return Node
-
