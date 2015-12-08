@@ -99,7 +99,7 @@ class NodeBase(object):
         """
         Returns a size of set of descendants
         """
-        return len(descendants_set(self));
+        return len(self.descendants_set(self));
 
     def ancestors_set(self):
         """
